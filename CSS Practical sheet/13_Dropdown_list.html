@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 0px 40px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .main{
+            background-color: #85b8de;
+        }
+        .main ul{
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .main .drop_menu{
+            position: relative;
+        }
+        .main .drop_menu .show{
+            position: absolute;
+            top: 39px;
+            left: -15px;
+            display: none;
+            padding: 7px 20px;
+            width: 157px;
+            background: #a2d1f6;
+        }
+        .main .drop_menu .show li{
+            padding: 10px 0px;
+        }
+        .main .drop_menu:hover .show{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li class="drop_menu">
+                    <a href="">Services</a>
+                    <ul class="show">
+                        <li><a href="">Service 1</a></li>
+                        <li><a href="">Service 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Bolg</a></li>
+                <li><a href="">About As</a></li>
+                <li><a href="">Contact As</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

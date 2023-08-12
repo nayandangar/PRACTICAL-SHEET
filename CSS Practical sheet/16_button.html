@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            margin:300px auto;
+        }
+    .main .button{
+            height: 60px;
+            width: 150px;
+            font-size: 20px;
+            background-color: rgba(74, 161, 190, 0.457);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: none;
+}
+    .border1::after{
+      content:"";
+       height: 5px;
+        width: 0;
+        background-color: red;
+        position:absolute;
+        transition: width 2s;
+    
+
+  }
+  .main:hover .border1::after{
+    width: 70px;
+
+  }
+  .border1::before{
+      content:"";
+       height: 0px;
+        width: 5px;
+        background-color: red;
+        position:absolute;
+       transition: height 2s;  
+
+  }
+  .main:hover .border1::before{
+    height: 59px;
+
+  }
+  .border2::before{
+      content:"";
+       height: 5px;
+        width: 0;
+        margin-inline: 80px;
+        background-color: red;
+        position:absolute;
+        transition: width 2s;
+  }
+  .main:hover .border2::before{
+    width: 70px;
+  }
+  .border2::after{
+      content:"";
+       height: 0;
+        width: 5px;
+        margin-inline: 145px;
+        top: 300px;
+        background-color: red;
+        position:absolute;
+        transition: height 2s;
+  }
+  .main:hover .border2::after{
+    height: 60px;
+    
+  }
+ </style>
+</head>
+<body><section>
+    <div class="main">
+        <div class="border1"></div>
+        <button class="button"> Button </button>
+        
+        <div class="border2"></div>
+            </div>
+            
+   </section>
+</body>
+</html>
